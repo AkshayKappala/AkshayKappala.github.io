@@ -5,7 +5,6 @@ const App = () => {
 	return (
 		<div className="container mx-auto max-w-7xl">
 			<Navbar />
-			{/* hero */}
 			<Hero />
 			{/* about */}
 			{/* projects */}
@@ -13,6 +12,12 @@ const App = () => {
 			{/* testimonials */}
 			{/* contact */}
 			{/* footer */}
+			<section className="min-h-screen" />
+			<section className="min-h-screen" />
+			<section className="min-h-screen" />
+			<section className="min-h-screen" />
+			<section className="min-h-screen" />
+			<section className="min-h-screen" />
 		</div>
 	);
 };
