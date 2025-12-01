@@ -1,6 +1,7 @@
 import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
+import Projects from "./sections/Projects";
 
 const App = () => {
 	return (
@@ -8,17 +9,11 @@ const App = () => {
 			<Navbar />
 			<Hero />
 			<About />
-			{/* projects */}
+			<Projects />
 			{/* experience */}
 			{/* testimonials */}
 			{/* contact */}
 			{/* footer */}
-			<section className="min-h-screen" />
-			<section className="min-h-screen" />
-			<section className="min-h-screen" />
-			<section className="min-h-screen" />
-			<section className="min-h-screen" />
-			<section className="min-h-screen" />
 		</div>
 	);
 };
