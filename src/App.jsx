@@ -1,3 +1,4 @@
+import Experiences from "./components/Experiences";
 import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
@@ -10,7 +11,7 @@ const App = () => {
 			<Hero />
 			<About />
 			<Projects />
-			{/* experience */}
+			<Experiences />
 			{/* testimonials */}
 			{/* contact */}
 			{/* footer */}
