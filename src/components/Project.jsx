@@ -7,6 +7,7 @@ const Project = ({
 	subDescription,
 	href,
 	image,
+	ctaLabel,
 	setPreview,
 	tags = [],
 }) => {
@@ -28,14 +29,34 @@ const Project = ({
 						))}
 					</div>
 				</div>
-				<button
-					type="button"
-					onClick={() => setIsHidden(true)}
-					className="flex items-center gap-1 cursor-pointer hover-animation"
-				>
-					Read More
-					<img src="assets/arrow-right.svg" className="w-5" alt="right arrow" />
-				</button>
+				{ctaLabel && href ? (
+					<a
+						href={href}
+						target="_blank"
+						rel="noreferrer"
+						className="flex items-center gap-1 cursor-pointer hover-animation"
+					>
+						{ctaLabel}
+						<img
+							src="assets/arrow-right.svg"
+							className="w-5"
+							alt="right arrow"
+						/>
+					</a>
+				) : (
+					<button
+						type="button"
+						onClick={() => setIsHidden(true)}
+						className="flex items-center gap-1 cursor-pointer hover-animation"
+					>
+						Read More
+						<img
+							src="assets/arrow-right.svg"
+							className="w-5"
+							alt="right arrow"
+						/>
+					</button>
+				)}
 			</div>
 			<div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent h-px w-full" />
 			{isHidden && (
