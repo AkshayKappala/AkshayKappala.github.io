@@ -1,4 +1,5 @@
 import About from "./sections/About";
+import Awards from "./sections/Awards";
 import Contact from "./sections/Contact";
 import Experiences from "./sections/Experiences";
 import Footer from "./sections/Footer";
@@ -15,6 +16,7 @@ const App = () => {
 				<About />
 				<Projects />
 				<Experiences />
+				<Awards />
 				<Contact />
 			</div>
 			<Footer />

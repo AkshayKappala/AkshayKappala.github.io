@@ -1,12 +1,11 @@
 import { motion } from "motion/react";
 
-const ProjectDetails = ({
+const AwardDetails = ({
 	title,
 	description,
 	subDescription,
 	image,
-	tags,
-	href,
+	originalHref,
 	closeModal,
 }) => {
 	return (
@@ -24,16 +23,35 @@ const ProjectDetails = ({
 			>
 				<button
 					onClick={closeModal}
-					className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
+					className="absolute z-20 p-2 rounded-sm top-5 right-5 bg-midnight/90 hover:bg-gray-500"
 					type="button"
 				>
 					<img src="assets/close.svg" className="w-6 h-6" alt="close" />
 				</button>
-				<img src={image} alt={title} className="w-full rounded-t-2xl" />
+				{image ? (
+					<div className="relative">
+						<img src={image} alt={title} className="w-full rounded-t-2xl" />
+						{originalHref ? (
+							<a
+								href={originalHref}
+								target="_blank"
+								rel="noreferrer"
+								className="absolute bottom-4 right-4 inline-flex items-center gap-1 font-medium cursor-pointer hover-animation bg-midnight/80 border border-white/10 rounded-md px-3 py-2"
+							>
+								View Original
+								<img
+									src="assets/arrow-up.svg"
+									className="size-4"
+									alt="arrow up"
+								/>
+							</a>
+						) : null}
+					</div>
+				) : null}
 				<div className="p-5">
 					<h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
 					<p className="mb-3 font-normal text-neutral-400">{description}</p>
-					{subDescription.map((subDesc, index) => (
+					{subDescription?.map((subDesc, index) => (
 						<p
 							key={`${index}-${subDesc}`}
 							className="mb-3 font-normal text-neutral-400"
@@ -41,33 +59,10 @@ const ProjectDetails = ({
 							{subDesc}
 						</p>
 					))}
-					<div className="flex items-center justify-between mt-4">
-						<div className="flex gap-3">
-							{tags.map((tag) => (
-								<img
-									key={tag.id}
-									src={tag.path}
-									alt={tag.name}
-									className="rounded-lg size-10 hover-animation"
-								/>
-							))}
-						</div>
-						<a
-							href={href}
-							className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
-						>
-							View Project
-							<img
-								src="assets/arrow-up.svg"
-								className="size-4"
-								alt="arrow up"
-							/>
-						</a>
-					</div>
 				</div>
 			</motion.div>
 		</motion.div>
 	);
 };
 
-export default ProjectDetails;
+export default AwardDetails;

@@ -203,6 +203,29 @@ export const myProjects = [
 	},
 ];
 
+export const awards = [
+	{
+		id: 1,
+		title: "Best Research Paper Award ",
+		description: "IEEE CCWC 2025",
+		subDescription: [
+			"Presented research on quantum-resistant encryption for resource-constrained agricultural sensors and Received Best Paper Award in the Security, Trust, and Privacy track at IEEE CCWC 2025.",
+		],
+		image: "/assets/awards/ieee.webp",
+		originalHref: "/assets/awards/ieeeorg.webp",
+	},
+	{
+		id: 2,
+		title: "National Hackathon Winner",
+		description: "Tech 2018, India",
+		subDescription: [
+			"Secured 1st place in a 24-hour gaming hackathon organized by APITA, UNESCO MGIEP, and Unity. Developed a Unity-based game promoting UNESCO’s peace education objectives.",
+		],
+		image: "/assets/awards/tech2018.webp",
+		originalHref: "/assets/awards/tech2018org.webp",
+	},
+];
+
 export const mySocials = [
 	{
 		name: "WhatsApp",

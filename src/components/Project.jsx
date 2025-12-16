@@ -1,3 +1,4 @@
+import { AnimatePresence } from "motion/react";
 import React from "react";
 import ProjectDetails from "./ProjectDetails";
 
@@ -59,17 +60,19 @@ const Project = ({
 				)}
 			</div>
 			<div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent h-px w-full" />
-			{isHidden && (
-				<ProjectDetails
-					title={title}
-					description={description}
-					subDescription={subDescription}
-					href={href}
-					image={image}
-					tags={tags}
-					closeModal={() => setIsHidden(false)}
-				/>
-			)}
+			<AnimatePresence>
+				{isHidden && (
+					<ProjectDetails
+						title={title}
+						description={description}
+						subDescription={subDescription}
+						href={href}
+						image={image}
+						tags={tags}
+						closeModal={() => setIsHidden(false)}
+					/>
+				)}
+			</AnimatePresence>
 		</>
 	);
 };
