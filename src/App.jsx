@@ -8,13 +8,15 @@ import Projects from "./sections/Projects";
 
 const App = () => {
 	return (
-		<div className="container mx-auto max-w-7xl">
+		<div className="container mx-auto max-w-7xl min-h-screen flex flex-col">
 			<Navbar />
-			<Hero />
-			<About />
-			<Projects />
-			<Experiences />
-			<Contact />
+			<div className="flex-1">
+				<Hero />
+				<About />
+				<Projects />
+				<Experiences />
+				<Contact />
+			</div>
 			<Footer />
 		</div>
 	);

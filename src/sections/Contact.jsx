@@ -66,7 +66,10 @@ const Contact = () => {
 	};
 
 	return (
-		<section className="relative flex items-center c-space section-spacing">
+		<section
+			id="contact"
+			className="relative flex items-start c-space mt-12 md:mt-12 py-12 md:py-12 mb-12"
+		>
 			<Particles
 				className="absolute inset-0 -z-50"
 				quantity={100}
@@ -80,10 +83,10 @@ const Contact = () => {
                 mx-auto border border-white/10 rounded-2xl bg-primary"
 			>
 				<div className="flex flex-col items-start w-full gap-5 mb-10">
-					<h2 className="text-heading">Let's talk</h2>
+					<h2 className="text-heading">Wanna talk?</h2>
 					<p className="font-normal text-neutral-400">
-						Whether you're looking to build a new website, improve your existing
-						one, or need help with a project, I'm here to assist you.
+						Hiring? or have a role you think I’d be a great fit for? Send me a
+						note.
 					</p>
 				</div>
 				<form className="w-full" onSubmit={handleSubmit}>

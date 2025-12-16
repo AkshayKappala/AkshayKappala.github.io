@@ -1,28 +1,53 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 
-function Navigation() {
+function Navigation({ onNavigate }) {
 	return (
 		<ul className="nav-ul">
 			<li className="nav-li">
-				<a className="nav-link" href="#home">
+				<button
+					type="button"
+					className="nav-link"
+					onClick={() => onNavigate("home")}
+				>
 					Home
-				</a>
+				</button>
 			</li>
 			<li className="nav-li">
-				<a className="nav-link" href="#about">
+				<button
+					type="button"
+					className="nav-link"
+					onClick={() => onNavigate("about")}
+				>
 					About
-				</a>
+				</button>
 			</li>
 			<li className="nav-li">
-				<a className="nav-link" href="#work">
-					Work
-				</a>
+				<button
+					type="button"
+					className="nav-link"
+					onClick={() => onNavigate("projects")}
+				>
+					Projects
+				</button>
 			</li>
 			<li className="nav-li">
-				<a className="nav-link" href="#contact">
+				<button
+					type="button"
+					className="nav-link"
+					onClick={() => onNavigate("experience")}
+				>
+					Experience
+				</button>
+			</li>
+			<li className="nav-li">
+				<button
+					type="button"
+					className="nav-link"
+					onClick={() => onNavigate("contact")}
+				>
 					Contact
-				</a>
+				</button>
 			</li>
 		</ul>
 	);
@@ -30,6 +55,17 @@ function Navigation() {
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const scrollToSection = (id) => {
+		const el = document.getElementById(id);
+		if (!el) return;
+		const headerOffset = 80; // matches 5rem scroll padding
+		const y = el.getBoundingClientRect().top + window.scrollY;
+		window.scrollTo({ top: y - headerOffset, behavior: "smooth" });
+	};
+	const handleNavigate = (id) => {
+		scrollToSection(id);
+		setIsOpen(false);
+	};
 	return (
 		<div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
 			<div className="mx-auto c-space max-w-7xl">
@@ -54,7 +90,7 @@ const Navbar = () => {
 						/>
 					</button>
 					<nav className="hidden sm:flex">
-						<Navigation />
+						<Navigation onNavigate={handleNavigate} />
 					</nav>
 				</div>
 			</div>
@@ -67,7 +103,7 @@ const Navbar = () => {
 					className="block overflow-hidden text-center sm:hidden"
 				>
 					<nav className="pb-5">
-						<Navigation />
+						<Navigation onNavigate={handleNavigate} />
 					</nav>
 				</motion.div>
 			)}

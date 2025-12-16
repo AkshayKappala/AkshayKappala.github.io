@@ -16,6 +16,7 @@ const Projects = () => {
 	return (
 		// biome-ignore lint/a11y/noStaticElementInteractions: custom cursor preview handled via JavaScript events
 		<section
+			id="projects"
 			onMouseMove={handleMouseMove}
 			className="relative c-space section-spacing"
 		>
