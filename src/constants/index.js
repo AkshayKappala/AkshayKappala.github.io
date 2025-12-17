@@ -1,4 +1,3 @@
-import { path } from "motion/react-client";
 import { logoUrls } from "../constants/logos";
 
 export const myProjects = [
