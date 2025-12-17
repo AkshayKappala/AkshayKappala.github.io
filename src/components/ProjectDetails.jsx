@@ -6,7 +6,8 @@ const ProjectDetails = ({
 	subDescription,
 	image,
 	tags,
-	href,
+	github,
+	website,
 	closeModal,
 }) => {
 	return (
@@ -52,17 +53,41 @@ const ProjectDetails = ({
 								/>
 							))}
 						</div>
-						<a
-							href={href}
-							className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
-						>
-							View Project
-							<img
-								src="assets/arrow-up.svg"
-								className="size-4"
-								alt="arrow up"
-							/>
-						</a>
+						<div className="flex gap-3">
+							<a
+								href={github}
+								target="_blank"
+								rel="noreferrer"
+								className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
+							>
+								<img
+									src="/assets/socials/github.svg"
+									alt="github"
+									className="w-4 h-4"
+								/>
+								GitHub
+								<img
+									src="assets/arrow-up.svg"
+									className="size-4"
+									alt="arrow up"
+								/>
+							</a>
+							{website && (
+								<a
+									href={website}
+									target="_blank"
+									rel="noreferrer"
+									className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
+								>
+									Website
+									<img
+										src="assets/arrow-up.svg"
+										className="size-4"
+										alt="arrow up"
+									/>
+								</a>
+							)}
+						</div>
 					</div>
 				</div>
 			</motion.div>

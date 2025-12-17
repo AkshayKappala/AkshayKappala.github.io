@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(33.333333,0,0,33.333333,0,0)">
+        <path d="M6.5,8C7.328,8 8,7.328 8,6.5C8,5.672 7.328,5 6.5,5C5.672,5 5,5.672 5,6.5C5,7.328 5.672,8 6.5,8Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(33.333333,0,0,33.333333,0,0)">
+        <path d="M5,10C5,9.448 5.448,9 6,9L7,9C7.552,9 8,9.448 8,10L8,18C8,18.552 7.552,19 7,19L6,19C5.448,19 5,18.552 5,18L5,10Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(33.333333,0,0,33.333333,0,0)">
+        <path d="M11,19L12,19C12.552,19 13,18.552 13,18L13,13.5C13,12 16,11 16,13L16,18C16,18.553 16.448,19 17,19L18,19C18.552,19 19,18.552 19,18L19,12C19,10 17.5,9 15.5,9C13.5,9 13,10.5 13,10.5L13,10C13,9.448 12.552,9 12,9L11,9C10.448,9 10,9.448 10,10L10,18C10,18.552 10.448,19 11,19Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+    <g transform="matrix(33.333333,0,0,33.333333,0,0)">
+        <path d="M20,1C21.657,1 23,2.343 23,4L23,20C23,21.657 21.657,23 20,23L4,23C2.343,23 1,21.657 1,20L1,4C1,2.343 2.343,1 4,1L20,1ZM20,3C20.552,3 21,3.448 21,4L21,20C21,20.552 20.552,21 20,21L4,21C3.448,21 3,20.552 3,20L3,4C3,3.448 3.448,3 4,3L20,3Z" style="fill:white;"/>
+    </g>
+</svg>

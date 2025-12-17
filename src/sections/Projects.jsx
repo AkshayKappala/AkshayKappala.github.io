@@ -23,7 +23,14 @@ const Projects = () => {
 			<h2 className="text-heading">My Personal Projects</h2>
 			<div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-12 h-px w-full" />
 			{myProjects.map((project) => (
-				<Project key={project.id} {...project} setPreview={setPreview} />
+				<Project
+					key={project.id}
+					{...project}
+					setPreview={setPreview}
+					hasSubDescription={
+						project.subDescription && project.subDescription.length > 0
+					}
+				/>
 			))}
 			{preview && (
 				<motion.img

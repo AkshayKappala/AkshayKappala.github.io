@@ -6,11 +6,12 @@ const Project = ({
 	title,
 	description,
 	subDescription,
-	href,
+	github,
+	website,
 	image,
-	ctaLabel,
 	setPreview,
 	tags = [],
+	hasSubDescription = false,
 }) => {
 	const [isHidden, setIsHidden] = React.useState(false);
 	return (
@@ -23,28 +24,30 @@ const Project = ({
 				onMouseLeave={() => setPreview(null)}
 			>
 				<div>
-					<p className="text-2xl">{title}</p>
+					<div className="flex items-center gap-3">
+						<p className="text-2xl">{title}</p>
+						<a
+							href={github}
+							target="_blank"
+							rel="noreferrer"
+							className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium transition-all duration-300 border rounded-full text-neutral-300 bg-midnight border-white/10 hover:bg-white/5 hover:border-white/20 hover:text-white"
+						>
+							<img
+								src="/assets/socials/github.svg"
+								alt="github"
+								className="w-4 h-4 opacity-80"
+							/>
+							GitHub
+						</a>
+					</div>
 					<div className="flex gap-5 mt-2 text-sand">
 						{tags.map((tag) => (
 							<span key={tag.id}>{tag.name}</span>
 						))}
 					</div>
 				</div>
-				{ctaLabel && href ? (
-					<a
-						href={href}
-						target="_blank"
-						rel="noreferrer"
-						className="flex items-center gap-1 cursor-pointer hover-animation"
-					>
-						{ctaLabel}
-						<img
-							src="assets/arrow-right.svg"
-							className="w-5"
-							alt="right arrow"
-						/>
-					</a>
-				) : (
+				{/* Read More Button - Conditional */}
+				{hasSubDescription && (
 					<button
 						type="button"
 						onClick={() => setIsHidden(true)}
@@ -66,7 +69,8 @@ const Project = ({
 						title={title}
 						description={description}
 						subDescription={subDescription}
-						href={href}
+						github={github}
+						website={website}
 						image={image}
 						tags={tags}
 						closeModal={() => setIsHidden(false)}

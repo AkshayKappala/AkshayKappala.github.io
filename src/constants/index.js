@@ -1,3 +1,6 @@
+import { path } from "motion/react-client";
+import { logoUrls } from "../constants/logos";
+
 export const myProjects = [
 	{
 		id: 1,
@@ -10,29 +13,39 @@ export const myProjects = [
 			"Developed comprehensive testing strategy using TestContainers for integration tests and Mockito for unit tests following TDD approach.",
 			"Implemented CI/CD ready Maven build lifecycle with Swagger UI documentation for API management.",
 		],
-		href: "",
-		logo: "",
+		website: "https://akshaykappala.github.io/creditx-website/",
+		github: "https://github.com/creditx-platform/creditx",
 		image: "/assets/projects/creditx_thumbnail.webp",
 		tags: [
 			{
 				id: 1,
-				name: "Spring Boot",
-				path: "/assets/logos/spring.svg",
+				name: "Spring",
+				path: logoUrls.spring,
 			},
 			{
 				id: 2,
-				name: "Kafka",
-				path: "/assets/logos/kafka.svg",
+				name: " Spring Boot",
+				path: logoUrls.springBoot,
 			},
 			{
 				id: 3,
-				name: "Oracle",
-				path: "/assets/logos/oracle.svg",
+				name: "Docker",
+				path: logoUrls.docker,
 			},
 			{
 				id: 4,
-				name: "Docker",
-				path: "/assets/logos/docker.svg",
+				name: "Postman",
+				path: logoUrls.postman,
+			},
+			{
+				id: 5,
+				name: "Kafka",
+				path: logoUrls.kafka,
+			},
+			{
+				id: 6,
+				name: "Oracle",
+				path: logoUrls.oracle,
 			},
 		],
 	},
@@ -47,29 +60,29 @@ export const myProjects = [
 			"Deployed on DigitalOcean with persistent storage, transaction logging, and order archival for business continuity.",
 			"Implemented real-time synchronization between customer orders and restaurant staff processing interface.",
 		],
-		href: "",
-		logo: "",
+		website: "",
+		github: "https://github.com/AkshayKappala/regal_elephant_web",
 		image: "/assets/projects/regal_thumbnail.webp",
 		tags: [
 			{
 				id: 1,
 				name: "PHP",
-				path: "/assets/logos/php.svg",
+				path: logoUrls.php,
 			},
 			{
 				id: 2,
-				name: "MySQL",
-				path: "/assets/logos/mysql.svg",
+				name: "JavaScript",
+				path: logoUrls.javascript,
 			},
 			{
 				id: 3,
-				name: "JavaScript",
-				path: "/assets/logos/javascript.svg",
+				name: "Bootstrap",
+				path: logoUrls.bootstrap,
 			},
 			{
 				id: 4,
-				name: "DigitalOcean",
-				path: "/assets/logos/digitalocean.svg",
+				name: "MySQL",
+				path: logoUrls.mysql,
 			},
 		],
 	},
@@ -84,29 +97,29 @@ export const myProjects = [
 			"Designed modular workflows for sellers (ad creation/editing) and buyers (browse, direct contact) with clean RESTful APIs.",
 			"Delivered predictable, real-time user experience with optimized data synchronization and responsive UI.",
 		],
-		href: "",
-		logo: "",
+		website: "",
+		github: "https://github.com/AkshayKappala/StationeryTrade",
 		image: "/assets/projects/stationery_thumbnail.webp",
 		tags: [
 			{
 				id: 1,
 				name: "Java",
-				path: "/assets/logos/java.svg",
+				path: logoUrls.java,
 			},
 			{
 				id: 2,
 				name: "Android",
-				path: "/assets/logos/android.svg",
+				path: logoUrls.android,
 			},
 			{
 				id: 3,
 				name: "Firebase",
-				path: "/assets/logos/firebase.svg",
+				path: logoUrls.firebase,
 			},
 			{
 				id: 4,
 				name: "REST API",
-				path: "/assets/logos/api.svg",
+				path: logoUrls.api,
 			},
 		],
 	},
@@ -121,29 +134,29 @@ export const myProjects = [
 			"Integrated asynchronous handling and system-level logging for robust error tracking and debugging.",
 			"Built benchmarking tools to validate security, latency, and throughput in high-load distributed environments.",
 		],
-		href: "",
-		logo: "",
+		website: "",
+		github: "https://github.com/AkshayKappala/dkm",
 		image: "/assets/projects/dkm_thumbnail.webp",
 		tags: [
 			{
 				id: 1,
 				name: "Python",
-				path: "/assets/logos/python.svg",
+				path: logoUrls.python,
 			},
 			{
 				id: 2,
 				name: "Cryptography",
-				path: "/assets/logos/security.svg",
+				path: logoUrls.encryption,
 			},
 			{
 				id: 3,
-				name: "Async",
-				path: "/assets/logos/asyncio.svg",
+				name: "VMWare",
+				path: logoUrls.vmware,
 			},
 			{
 				id: 4,
-				name: "AES-256",
-				path: "/assets/logos/encryption.svg",
+				name: "Wireshark",
+				path: logoUrls.wireshark,
 			},
 		],
 	},
@@ -158,29 +171,24 @@ export const myProjects = [
 			"Designed and shipped modular Unity plugins for physics, animation, input, and matchmaking systems.",
 			"Wrote concurrency-safe, performance-optimized code enabling reusable components and seamless multiplayer experience.",
 		],
-		href: "",
-		logo: "",
+		website: "",
+		github: "https://github.com/AkshayKappala/Tumble-Guys",
 		image: "/assets/projects/tumble_thumbnail.webp",
 		tags: [
 			{
 				id: 1,
 				name: "Unity",
-				path: "/assets/logos/unity.svg",
+				path: logoUrls.unity,
 			},
 			{
 				id: 2,
 				name: "C#",
-				path: "/assets/logos/csharp.svg",
+				path: logoUrls.csharp,
 			},
 			{
 				id: 3,
 				name: "Networking",
-				path: "/assets/logos/network.svg",
-			},
-			{
-				id: 4,
-				name: "Android",
-				path: "/assets/logos/android.svg",
+				path: "",
 			},
 		],
 	},
@@ -189,15 +197,13 @@ export const myProjects = [
 		title: "More Personal Projects",
 		description: "",
 		subDescription: [],
-		href: "https://github.com/",
-		logo: "",
-		image: "",
-		ctaLabel: "GitHub",
+		website: "",
+		github: "https://github.com/AkshayKappala",
 		tags: [
 			{
 				id: 1,
 				name: "Find my other projects in my GitHub.",
-				path: "/assets/logos/github.svg",
+				path: logoUrls.github,
 			},
 		],
 	},
@@ -228,19 +234,14 @@ export const awards = [
 
 export const mySocials = [
 	{
-		name: "WhatsApp",
-		href: "",
-		icon: "/assets/socials/whatsApp.svg",
-	},
-	{
 		name: "Linkedin",
-		href: "https://www.linkedin.com/in/ali-sanati/",
-		icon: "/assets/socials/linkedIn.svg",
+		href: "https://www.linkedin.com/in/akshaykappala/",
+		icon: "/assets/socials/linkedin.svg",
 	},
 	{
-		name: "Instagram",
-		href: "https://www.instagram.com/ali.sanatidev/reels/",
-		icon: "/assets/socials/instagram.svg",
+		name: "Github",
+		href: "https://github.com/akshaykappala",
+		icon: "/assets/socials/github.svg",
 	},
 ];
 
