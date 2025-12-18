@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+import arrowUpIcon from "/assets/arrow-up.svg";
+import closeIcon from "/assets/close.svg";
 
 const AwardDetails = ({
 	title,
@@ -26,7 +28,7 @@ const AwardDetails = ({
 					className="absolute z-20 p-2 rounded-sm top-5 right-5 bg-midnight/90 hover:bg-gray-500"
 					type="button"
 				>
-					<img src="assets/close.svg" className="w-6 h-6" alt="close" />
+					<img src={closeIcon} className="w-6 h-6" alt="close" />
 				</button>
 				{image ? (
 					<div className="relative">
@@ -39,11 +41,7 @@ const AwardDetails = ({
 								className="absolute bottom-4 right-4 inline-flex items-center gap-1 font-medium cursor-pointer hover-animation bg-midnight/80 border border-white/10 rounded-md px-3 py-2"
 							>
 								View Original
-								<img
-									src="assets/arrow-up.svg"
-									className="size-4"
-									alt="arrow up"
-								/>
+								<img src={arrowUpIcon} className="size-4" alt="arrow up" />
 							</a>
 						) : null}
 					</div>

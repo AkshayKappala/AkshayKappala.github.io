@@ -1,7 +1,8 @@
 import { AnimatePresence } from "motion/react";
 import React from "react";
+import arrowRightIcon from "/assets/arrow-right.svg";
+import githubIcon from "/assets/socials/github.svg";
 import ProjectDetails from "./ProjectDetails";
-import githubIcon from '/assets/socials/github.svg';
 
 const Project = ({
 	title,
@@ -59,11 +60,7 @@ const Project = ({
 						className="flex items-center gap-1 cursor-pointer hover-animation shrink-0"
 					>
 						Read More
-						<img
-							src="assets/arrow-right.svg"
-							className="w-5"
-							alt="right arrow"
-						/>
+						<img src={arrowRightIcon} className="w-5" alt="right arrow" />
 					</button>
 				)}
 			</div>

@@ -1,9 +1,9 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
-import skyImg from '/assets/sky.webp';
-import mountain1Img from '/assets/mountain-1.webp';
-import mountain2Img from '/assets/mountain-2.webp';
-import mountain3Img from '/assets/mountain-3.webp';
-import planetsImg from '/assets/planets.webp';
+import mountain1Img from "/assets/mountain-1.webp";
+import mountain2Img from "/assets/mountain-2.webp";
+import mountain3Img from "/assets/mountain-3.webp";
+import planetsImg from "/assets/planets.webp";
+import skyImg from "/assets/sky.webp";
 
 const ParallaxBackground = () => {
 	const { scrollYProgress } = useScroll();

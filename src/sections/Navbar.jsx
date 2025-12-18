@@ -1,5 +1,7 @@
 import { motion } from "motion/react";
 import { useState } from "react";
+import closeIcon from "/assets/close.svg";
+import menuIcon from "/assets/menu.svg";
 
 function Navigation({ onNavigate }) {
 	return (
@@ -93,7 +95,7 @@ const Navbar = () => {
 						focus:outline-none sm:hidden"
 					>
 						<img
-							src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
+							src={isOpen ? closeIcon : menuIcon}
 							className="w-6 h-6"
 							alt="toggle"
 						/>

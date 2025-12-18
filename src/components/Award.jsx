@@ -1,5 +1,6 @@
 import { AnimatePresence } from "motion/react";
 import React from "react";
+import arrowRightIcon from "/assets/arrow-right.svg";
 import AwardDetails from "./AwardDetails";
 
 const Award = ({
@@ -33,7 +34,7 @@ const Award = ({
 					className="flex items-center gap-1 cursor-pointer hover-animation shrink-0"
 				>
 					Read More
-					<img src="assets/arrow-right.svg" className="w-5" alt="right arrow" />
+					<img src={arrowRightIcon} className="w-5" alt="right arrow" />
 				</button>
 			</div>
 			<div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent h-px w-full" />

@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
-import githubIcon from '/assets/socials/github.svg';
-import arrowUpIcon from '/assets/arrow-up.svg';
+import arrowUpIcon from "/assets/arrow-up.svg";
+import closeIcon from "/assets/close.svg";
+import githubIcon from "/assets/socials/github.svg";
 
 const ProjectDetails = ({
 	title,
@@ -30,7 +31,7 @@ const ProjectDetails = ({
 					className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
 					type="button"
 				>
-					<img src="assets/close.svg" className="w-6 h-6" alt="close" />
+					<img src={closeIcon} className="w-6 h-6" alt="close" />
 				</button>
 				<img src={image} alt={title} className="w-full rounded-t-2xl" />
 				<div className="p-5">
@@ -64,17 +65,9 @@ const ProjectDetails = ({
 								rel="noreferrer"
 								className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
 							>
-								<img
-									src={githubIcon}
-									alt="github"
-									className="w-4 h-4"
-								/>
+								<img src={githubIcon} alt="github" className="w-4 h-4" />
 								GitHub
-								<img
-									src={arrowUpIcon}
-									className="size-4"
-									alt="arrow up"
-								/>
+								<img src={arrowUpIcon} className="size-4" alt="arrow up" />
 							</a>
 							{website && (
 								<a
@@ -84,11 +77,7 @@ const ProjectDetails = ({
 									className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
 								>
 									Website
-									<img
-										src={arrowUpIcon}
-										className="size-4"
-										alt="arrow up"
-									/>
+									<img src={arrowUpIcon} className="size-4" alt="arrow up" />
 								</a>
 							)}
 						</div>

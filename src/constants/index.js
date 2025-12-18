@@ -1,21 +1,19 @@
-import { logoUrls } from "../constants/logos";
-
-// Project images
-import creditxImg from '/assets/projects/creditx_thumbnail.webp';
-import stationeryImg from '/assets/projects/stationery_thumbnail.webp';
-import regalImg from '/assets/projects/regal_thumbnail.webp';
-import portfolioImg from '/assets/projects/portfolio_thumbnail.webp';
-import dkmImg from '/assets/projects/dkm_thumbnail.webp';
-
 // Award images
-import ieeeImg from '/assets/awards/ieee.webp';
-import ieeeorgImg from '/assets/awards/ieeeorg.webp';
-import tech2018Img from '/assets/awards/tech2018.webp';
-import tech2018orgImg from '/assets/awards/tech2018org.webp';
+import ieeeImg from "/assets/awards/ieee.webp";
+import ieeeorgImg from "/assets/awards/ieeeorg.webp";
+import tech2018Img from "/assets/awards/tech2018.webp";
+import tech2018orgImg from "/assets/awards/tech2018org.webp";
+// Project images
+import creditxImg from "/assets/projects/creditx_thumbnail.webp";
+import dkmImg from "/assets/projects/dkm_thumbnail.webp";
+import portfolioImg from "/assets/projects/portfolio_thumbnail.webp";
+import regalImg from "/assets/projects/regal_thumbnail.webp";
+import stationeryImg from "/assets/projects/stationery_thumbnail.webp";
+import githubIcon from "/assets/socials/github.svg";
 
 // Social icons
-import linkedinIcon from '/assets/socials/linkedin.svg';
-import githubIcon from '/assets/socials/github.svg';
+import linkedinIcon from "/assets/socials/linkedin.svg";
+import { logoUrls } from "../constants/logos";
 
 export const myProjects = [
 	{

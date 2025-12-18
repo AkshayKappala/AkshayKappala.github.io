@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import codingImg from "/assets/coding-pov.webp";
 import Card from "../components/Card";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
@@ -14,7 +15,7 @@ const About = () => {
 				{/* Grid 1 */}
 				<div className="flex items-end grid-default-color grid-1">
 					<img
-						src="assets/coding-pov.webp"
+						src={codingImg}
 						className="absolute scale-[1.75] -right-20 -top-4 md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
 						alt="coding point of view"
 					/>
