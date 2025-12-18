@@ -1,6 +1,7 @@
 import { AnimatePresence } from "motion/react";
 import React from "react";
 import ProjectDetails from "./ProjectDetails";
+import githubIcon from '/assets/socials/github.svg';
 
 const Project = ({
 	title,
@@ -32,7 +33,7 @@ const Project = ({
 							className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium transition-all duration-300 border rounded-full text-neutral-300 bg-midnight border-white/10 hover:bg-white/5 hover:border-white/20 hover:text-white align-baseline"
 						>
 							<img
-								src="/assets/socials/github.svg"
+								src={githubIcon}
 								alt="github"
 								className="w-4 h-4 opacity-80"
 							/>

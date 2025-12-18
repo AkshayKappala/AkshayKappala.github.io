@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+import githubIcon from '/assets/socials/github.svg';
+import arrowUpIcon from '/assets/arrow-up.svg';
 
 const ProjectDetails = ({
 	title,
@@ -63,13 +65,13 @@ const ProjectDetails = ({
 								className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
 							>
 								<img
-									src="/assets/socials/github.svg"
+									src={githubIcon}
 									alt="github"
 									className="w-4 h-4"
 								/>
 								GitHub
 								<img
-									src="assets/arrow-up.svg"
+									src={arrowUpIcon}
 									className="size-4"
 									alt="arrow up"
 								/>
@@ -83,7 +85,7 @@ const ProjectDetails = ({
 								>
 									Website
 									<img
-										src="assets/arrow-up.svg"
+										src={arrowUpIcon}
 										className="size-4"
 										alt="arrow up"
 									/>

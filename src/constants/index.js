@@ -1,5 +1,22 @@
 import { logoUrls } from "../constants/logos";
 
+// Project images
+import creditxImg from '/assets/projects/creditx_thumbnail.webp';
+import stationeryImg from '/assets/projects/stationery_thumbnail.webp';
+import regalImg from '/assets/projects/regal_thumbnail.webp';
+import portfolioImg from '/assets/projects/portfolio_thumbnail.webp';
+import dkmImg from '/assets/projects/dkm_thumbnail.webp';
+
+// Award images
+import ieeeImg from '/assets/awards/ieee.webp';
+import ieeeorgImg from '/assets/awards/ieeeorg.webp';
+import tech2018Img from '/assets/awards/tech2018.webp';
+import tech2018orgImg from '/assets/awards/tech2018org.webp';
+
+// Social icons
+import linkedinIcon from '/assets/socials/linkedin.svg';
+import githubIcon from '/assets/socials/github.svg';
+
 export const myProjects = [
 	{
 		id: 1,
@@ -14,7 +31,7 @@ export const myProjects = [
 		],
 		website: "https://akshaykappala.github.io/creditx-website/",
 		github: "https://github.com/creditx-platform/creditx",
-		image: "/assets/projects/creditx_thumbnail.webp",
+		image: creditxImg,
 		tags: [
 			{
 				id: 1,
@@ -61,7 +78,7 @@ export const myProjects = [
 		],
 		website: "",
 		github: "https://github.com/AkshayKappala/StationeryTrade",
-		image: "/assets/projects/stationery_thumbnail.webp",
+		image: stationeryImg,
 		tags: [
 			{
 				id: 1,
@@ -98,7 +115,7 @@ export const myProjects = [
 		],
 		website: "",
 		github: "https://github.com/AkshayKappala/regal_elephant_web",
-		image: "/assets/projects/regal_thumbnail.webp",
+		image: regalImg,
 		tags: [
 			{
 				id: 1,
@@ -135,7 +152,7 @@ export const myProjects = [
 		],
 		website: "https://akshaykappala.github.io",
 		github: "https://github.com/AkshayKappala/Portfolio",
-		image: "/assets/projects/portfolio_thumbnail.webp",
+		image: portfolioImg,
 		tags: [
 			{
 				id: 1,
@@ -172,7 +189,7 @@ export const myProjects = [
 		],
 		website: "",
 		github: "https://github.com/AkshayKappala/dkm",
-		image: "/assets/projects/dkm_thumbnail.webp",
+		image: dkmImg,
 		tags: [
 			{
 				id: 1,
@@ -209,7 +226,7 @@ export const myProjects = [
 		],
 		website: "https://akshaykappala.github.io",
 		github: "https://github.com/AkshayKappala/Portfolio",
-		image: "/assets/projects/portfolio_thumbnail.webp",
+		image: portfolioImg,
 		tags: [
 			{
 				id: 1,
@@ -258,8 +275,8 @@ export const awards = [
 		subDescription: [
 			"Presented research on quantum-resistant encryption for resource-constrained agricultural sensors and Received Best Paper Award in the Security, Trust, and Privacy track at IEEE CCWC 2025.",
 		],
-		image: "/assets/awards/ieee.webp",
-		originalHref: "/assets/awards/ieeeorg.webp",
+		image: ieeeImg,
+		originalHref: ieeeorgImg,
 	},
 	{
 		id: 2,
@@ -268,8 +285,8 @@ export const awards = [
 		subDescription: [
 			"Secured 1st place in a 24-hour gaming hackathon organized by APITA, UNESCO MGIEP, and Unity. Developed a Unity-based game promoting UNESCO’s peace education objectives.",
 		],
-		image: "/assets/awards/tech2018.webp",
-		originalHref: "/assets/awards/tech2018org.webp",
+		image: tech2018Img,
+		originalHref: tech2018orgImg,
 	},
 ];
 
@@ -277,12 +294,12 @@ export const mySocials = [
 	{
 		name: "Linkedin",
 		href: "https://www.linkedin.com/in/akshaykappala/",
-		icon: "/assets/socials/linkedin.svg",
+		icon: linkedinIcon,
 	},
 	{
 		name: "Github",
 		href: "https://github.com/akshaykappala",
-		icon: "/assets/socials/github.svg",
+		icon: githubIcon,
 	},
 ];
 

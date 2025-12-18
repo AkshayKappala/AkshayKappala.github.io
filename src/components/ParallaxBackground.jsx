@@ -1,4 +1,9 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
+import skyImg from '/assets/sky.webp';
+import mountain1Img from '/assets/mountain-1.webp';
+import mountain2Img from '/assets/mountain-2.webp';
+import mountain3Img from '/assets/mountain-3.webp';
+import planetsImg from '/assets/planets.webp';
 
 const ParallaxBackground = () => {
 	const { scrollYProgress } = useScroll();
@@ -15,7 +20,7 @@ const ParallaxBackground = () => {
 				<div
 					className="absolute inset-0 w-full h-screen -z-50"
 					style={{
-						backgroundImage: "url(/assets/sky.webp)",
+						backgroundImage: `url(${skyImg})`,
 						backgroundPosition: "bottom",
 						backgroundSize: "cover",
 					}}
@@ -24,7 +29,7 @@ const ParallaxBackground = () => {
 				<motion.div
 					className="absolute inset-0 -z-40"
 					style={{
-						backgroundImage: "url(/assets/mountain-3.webp)",
+						backgroundImage: `url(${mountain3Img})`,
 						backgroundPosition: "bottom",
 						backgroundSize: "cover",
 						y: mountain3Y,
@@ -34,7 +39,7 @@ const ParallaxBackground = () => {
 				<motion.div
 					className="absolute inset-0 -z-30"
 					style={{
-						backgroundImage: "url(/assets/planets.webp)",
+						backgroundImage: `url(${planetsImg})`,
 						backgroundPosition: "bottom",
 						backgroundSize: "cover",
 						x: planetsX,
@@ -44,7 +49,7 @@ const ParallaxBackground = () => {
 				<motion.div
 					className="absolute inset-0 -z-20"
 					style={{
-						backgroundImage: "url(/assets/mountain-2.webp)",
+						backgroundImage: `url(${mountain2Img})`,
 						backgroundPosition: "bottom",
 						backgroundSize: "cover",
 						y: mountain2Y,
@@ -54,7 +59,7 @@ const ParallaxBackground = () => {
 				<motion.div
 					className="absolute inset-0 -z-10"
 					style={{
-						backgroundImage: "url(/assets/mountain-1.webp)",
+						backgroundImage: `url(${mountain1Img})`,
 						backgroundPosition: "bottom",
 						backgroundSize: "cover",
 						y: mountain1Y,
