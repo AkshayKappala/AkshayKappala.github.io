@@ -316,7 +316,7 @@ export const experiences = [
 		],
 	},
 	{
-		title: "Cybersecurity Researcher",
+		title: "Research Engineer",
 		company: "Dakota State University",
 		date: "Jun 2024 - May 2025",
 		contents: [
