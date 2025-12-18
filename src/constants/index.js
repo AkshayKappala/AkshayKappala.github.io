@@ -149,7 +149,7 @@ export const myProjects = [
 			"Integrated EmailJS for contact form functionality and deployed with optimized WebP images for faster load times.",
 		],
 		website: "https://akshaykappala.github.io",
-		github: "https://github.com/AkshayKappala/Portfolio",
+		github: "https://github.com/AkshayKappala/AkshayKappala.github.io",
 		image: portfolioImg,
 		tags: [
 			{
@@ -223,7 +223,7 @@ export const myProjects = [
 			"Integrated EmailJS for contact form functionality and deployed with optimized WebP images for faster load times.",
 		],
 		website: "https://akshaykappala.github.io",
-		github: "https://github.com/AkshayKappala/Portfolio",
+		github: "https://github.com/AkshayKappala/AkshayKappala.github.io",
 		image: portfolioImg,
 		tags: [
 			{
@@ -350,3 +350,4 @@ export const experiences = [
 		],
 	},
 ];
+
