@@ -19,7 +19,7 @@ const Awards = () => {
 		<section
 			id="awards"
 			onMouseMove={handleMouseMove}
-			className="relative c-space mt-12 md:mt-20 mb-20 md:mb-30"
+			className="relative c-space section-spacing"
 		>
 			<h2 className="text-heading">Awards</h2>
 			<div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-12 h-px w-full" />

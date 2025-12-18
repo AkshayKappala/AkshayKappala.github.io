@@ -3,7 +3,7 @@ import { experiences } from "../constants";
 
 const Experiences = () => {
 	return (
-		<section id="experience" className="w-full">
+		<section id="experience">
 			<Timeline data={experiences} />
 		</section>
 	);

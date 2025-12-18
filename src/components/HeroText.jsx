@@ -28,7 +28,7 @@ const HeroText = () => {
 						animate="visible"
 						transition={{ delay: 0.6 }}
 					>
-						A Developer <br />
+						An Engineer <br />
 						dedicated to crafting
 					</motion.p>
 					<motion.div
@@ -49,7 +49,7 @@ const HeroText = () => {
 						animate="visible"
 						transition={{ delay: 0.8 }}
 					>
-						Web Solutions
+						Software Solutions
 					</motion.p>
 				</div>
 			</div>
@@ -92,7 +92,7 @@ const HeroText = () => {
 						animate="visible"
 						transition={{ delay: 0.8 }}
 					>
-						Web Applications
+						Software Solutions
 					</motion.p>
 				</div>
 			</div>

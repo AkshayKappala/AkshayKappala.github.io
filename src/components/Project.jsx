@@ -18,19 +18,18 @@ const Project = ({
 		<>
 			{/** biome-ignore lint/a11y/noStaticElementInteractions: false positive */}
 			<div
-				className="flex-wrap items-center py-10 justify-between
-                space-y-14 sm:flex sm:space-y-0"
+				className="flex flex-row py-10 justify-between items-end gap-4"
 				onMouseEnter={() => setPreview(image)}
 				onMouseLeave={() => setPreview(null)}
 			>
-				<div>
-					<div className="flex items-center gap-3">
-						<p className="text-2xl">{title}</p>
+				<div className="flex-1 min-w-0">
+					<div>
+						<p className="text-2xl inline mr-2">{title}</p>
 						<a
 							href={github}
 							target="_blank"
 							rel="noreferrer"
-							className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium transition-all duration-300 border rounded-full text-neutral-300 bg-midnight border-white/10 hover:bg-white/5 hover:border-white/20 hover:text-white"
+							className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium transition-all duration-300 border rounded-full text-neutral-300 bg-midnight border-white/10 hover:bg-white/5 hover:border-white/20 hover:text-white align-baseline"
 						>
 							<img
 								src="/assets/socials/github.svg"
@@ -40,10 +39,15 @@ const Project = ({
 							GitHub
 						</a>
 					</div>
-					<div className="flex gap-5 mt-2 text-sand">
-						{tags.map((tag) => (
-							<span key={tag.id}>{tag.name}</span>
-						))}
+					<div className="relative mt-2 overflow-hidden">
+						<div className="flex gap-5 text-sand">
+							{tags.map((tag) => (
+								<span key={tag.id} className="whitespace-nowrap">
+									{tag.name}
+								</span>
+							))}
+						</div>
+						<div className="absolute right-0 top-0 bottom-0 w-20 bg-linear-to-l from-primary to-transparent pointer-events-none" />
 					</div>
 				</div>
 				{/* Read More Button - Conditional */}
@@ -51,7 +55,7 @@ const Project = ({
 					<button
 						type="button"
 						onClick={() => setIsHidden(true)}
-						className="flex items-center gap-1 cursor-pointer hover-animation"
+						className="flex items-center gap-1 cursor-pointer hover-animation shrink-0"
 					>
 						Read More
 						<img

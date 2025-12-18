@@ -16,6 +16,10 @@ export const logoUrls = {
 	// Frontend & Tools
 	javascript: "https://img.icons8.com/fluency/96/javascript.png",
 	bootstrap: "https://img.icons8.com/color-glass/48/bootstrap.png",
+	react: "https://img.icons8.com/office/40/react.png",
+	threejs: "https://img.icons8.com/nolan/64/three-js.png",
+	tailwind: "https://img.icons8.com/color/48/tailwind_css.png",
+	vite: "https://img.icons8.com/fluency/96/vite.png",
 
 	// DevOps & Cloud
 	docker: "https://img.icons8.com/fluency/48/docker.png",

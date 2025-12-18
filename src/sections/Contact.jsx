@@ -68,7 +68,7 @@ const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="relative flex items-start c-space mt-12 md:mt-12 py-12 md:py-12 mb-12"
+			className="relative flex items-start c-space section-spacing pb-12"
 		>
 			<Particles
 				className="absolute inset-0 -z-50"

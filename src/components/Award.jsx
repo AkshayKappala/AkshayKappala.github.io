@@ -16,18 +16,21 @@ const Award = ({
 		<>
 			{/** biome-ignore lint/a11y/noStaticElementInteractions: false positive */}
 			<div
-				className="flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0"
+				className="flex flex-row py-10 justify-between items-end gap-4"
 				onMouseEnter={() => setPreview?.(image)}
 				onMouseLeave={() => setPreview?.(null)}
 			>
-				<div className="max-w-3xl">
+				<div className="flex-1 min-w-0">
 					<p className="text-2xl">{title}</p>
-					<p className="mt-2 text-sand">{description}</p>
+					<div className="relative mt-2 overflow-hidden">
+						<p className="text-sand whitespace-nowrap">{description}</p>
+						<div className="absolute right-0 top-0 bottom-0 w-20 bg-linear-to-l from-primary to-transparent pointer-events-none" />
+					</div>
 				</div>
 				<button
 					type="button"
 					onClick={() => setIsOpen(true)}
-					className="flex items-center gap-1 cursor-pointer hover-animation"
+					className="flex items-center gap-1 cursor-pointer hover-animation shrink-0"
 				>
 					Read More
 					<img src="assets/arrow-right.svg" className="w-5" alt="right arrow" />

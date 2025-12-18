@@ -18,8 +18,8 @@ export const myProjects = [
 		tags: [
 			{
 				id: 1,
-				name: "Spring",
-				path: logoUrls.spring,
+				name: "Java",
+				path: logoUrls.java,
 			},
 			{
 				id: 2,
@@ -50,43 +50,6 @@ export const myProjects = [
 	},
 	{
 		id: 2,
-		title: "Online Food Ordering and Management Platform",
-		description:
-			"A full-stack restaurant management platform allowing customers to place orders online and enabling restaurant staff to process and track orders in real time via Server-Sent Events (SSE).",
-		subDescription: [
-			"Built full-stack platform using PHP, JavaScript, MySQL, and HTML/CSS with real-time order tracking via Server-Sent Events (SSE).",
-			"Designed RESTful APIs with secure authentication and modular backend logic for menu, orders, and user roles.",
-			"Deployed on DigitalOcean with persistent storage, transaction logging, and order archival for business continuity.",
-			"Implemented real-time synchronization between customer orders and restaurant staff processing interface.",
-		],
-		website: "",
-		github: "https://github.com/AkshayKappala/regal_elephant_web",
-		image: "/assets/projects/regal_thumbnail.webp",
-		tags: [
-			{
-				id: 1,
-				name: "PHP",
-				path: logoUrls.php,
-			},
-			{
-				id: 2,
-				name: "JavaScript",
-				path: logoUrls.javascript,
-			},
-			{
-				id: 3,
-				name: "Bootstrap",
-				path: logoUrls.bootstrap,
-			},
-			{
-				id: 4,
-				name: "MySQL",
-				path: logoUrls.mysql,
-			},
-		],
-	},
-	{
-		id: 3,
 		title: "Scalable E-Commerce Android Application",
 		description:
 			"A role-based Android application with Firebase Auth and Realtime Database for secure authentication and instant synchronization, enabling scalable listings and secure user interactions.",
@@ -123,7 +86,81 @@ export const myProjects = [
 		],
 	},
 	{
+		id: 3,
+		title: "Online Food Ordering and Management Platform",
+		description:
+			"A full-stack restaurant management platform allowing customers to place orders online and enabling restaurant staff to process and track orders in real time via Server-Sent Events (SSE).",
+		subDescription: [
+			"Built full-stack platform using PHP, JavaScript, MySQL, and HTML/CSS with real-time order tracking via Server-Sent Events (SSE).",
+			"Designed RESTful APIs with secure authentication and modular backend logic for menu, orders, and user roles.",
+			"Deployed on DigitalOcean with persistent storage, transaction logging, and order archival for business continuity.",
+			"Implemented real-time synchronization between customer orders and restaurant staff processing interface.",
+		],
+		website: "",
+		github: "https://github.com/AkshayKappala/regal_elephant_web",
+		image: "/assets/projects/regal_thumbnail.webp",
+		tags: [
+			{
+				id: 1,
+				name: "PHP",
+				path: logoUrls.php,
+			},
+			{
+				id: 2,
+				name: "JavaScript",
+				path: logoUrls.javascript,
+			},
+			{
+				id: 3,
+				name: "Bootstrap",
+				path: logoUrls.bootstrap,
+			},
+			{
+				id: 4,
+				name: "MySQL",
+				path: logoUrls.mysql,
+			},
+		],
+	},
+	{
 		id: 4,
+		title: "Interactive Portfolio Website",
+		description:
+			"A modern, responsive portfolio website built with React, featuring 3D graphics, smooth animations, and an interactive design to showcase projects and experience.",
+		subDescription: [
+			"Built with React 19 and Vite for lightning-fast performance with optimized bundle sizes and lazy loading.",
+			"Implemented interactive 3D graphics using Three.js and React Three Fiber with real-time astronaut model tracking.",
+			"Designed fully responsive UI with Tailwind CSS 4, featuring parallax effects, animated text, and physics-based draggable cards.",
+			"Integrated EmailJS for contact form functionality and deployed with optimized WebP images for faster load times.",
+		],
+		website: "https://akshaykappala.github.io",
+		github: "https://github.com/AkshayKappala/Portfolio",
+		image: "/assets/projects/portfolio_thumbnail.webp",
+		tags: [
+			{
+				id: 1,
+				name: "React",
+				path: logoUrls.react,
+			},
+			{
+				id: 2,
+				name: "Three.js",
+				path: logoUrls.threejs,
+			},
+			{
+				id: 3,
+				name: "Tailwind",
+				path: logoUrls.tailwind,
+			},
+			{
+				id: 4,
+				name: "Vite",
+				path: logoUrls.vite,
+			},
+		],
+	},
+	{
+		id: 5,
 		title: "Secure Adaptive Key-Rotation File Transfer System",
 		description:
 			"A secure file transfer system using hybrid encryption combining AES-256 and post-quantum Kyber ML-KEM with automatic key rotation and DWT-based data fragmentation.",
@@ -160,39 +197,44 @@ export const myProjects = [
 		],
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Real-Time Multiplayer Game",
 		description:
-			"A Unity-based multiplayer action game with real-time networking, latency compensation, and client-server state synchronization for Android and desktop with custom networking for scalable cross-platform deployment.",
+			"A modern, responsive portfolio website built with React, featuring 3D graphics, smooth animations, and an interactive design to showcase projects and experience.",
 		subDescription: [
-			"Engineered Unity-based multiplayer action game in C# with real-time networking and latency compensation for smooth gameplay.",
-			"Implemented client-server state synchronization with custom networking layer for scalable cross-platform deployment on Android and desktop.",
-			"Designed and shipped modular Unity plugins for physics, animation, input, and matchmaking systems.",
-			"Wrote concurrency-safe, performance-optimized code enabling reusable components and seamless multiplayer experience.",
+			"Built with React 19 and Vite for lightning-fast performance with optimized bundle sizes and lazy loading.",
+			"Implemented interactive 3D graphics using Three.js and React Three Fiber with real-time astronaut model tracking.",
+			"Designed fully responsive UI with Tailwind CSS 4, featuring parallax effects, animated text, and physics-based draggable cards.",
+			"Integrated EmailJS for contact form functionality and deployed with optimized WebP images for faster load times.",
 		],
-		website: "",
-		github: "https://github.com/AkshayKappala/Tumble-Guys",
-		image: "/assets/projects/tumble_thumbnail.webp",
+		website: "https://akshaykappala.github.io",
+		github: "https://github.com/AkshayKappala/Portfolio",
+		image: "/assets/projects/portfolio_thumbnail.webp",
 		tags: [
 			{
 				id: 1,
-				name: "Unity",
-				path: logoUrls.unity,
+				name: "React",
+				path: logoUrls.react,
 			},
 			{
 				id: 2,
-				name: "C#",
-				path: logoUrls.csharp,
+				name: "Three.js",
+				path: logoUrls.threejs,
 			},
 			{
 				id: 3,
-				name: "Networking",
-				path: "",
+				name: "Tailwind",
+				path: logoUrls.tailwind,
+			},
+			{
+				id: 4,
+				name: "Vite",
+				path: logoUrls.vite,
 			},
 		],
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "More Personal Projects",
 		description: "",
 		subDescription: [],
@@ -246,11 +288,12 @@ export const mySocials = [
 
 export const experiences = [
 	{
-		title: "Software Engineer",
+		title: "Software Engineer (CW)",
 		company: "PayPal",
 		date: "May 2025 - Present",
 		contents: [
 			"Built high-throughput payment microservices in Spring Boot handling 2000+ RPM with 99.9% uptime.",
+			"Migrated monolithic payment logic into distributed microservices with zero downtime and backward compatibility.",
 			"Integrated legacy systems with REST + Kafka; interfaced with TSYS mainframe green screens for business support.",
 			"Improved API performance by 30% through query optimization, PL/SQL procedures, and Redis caching.",
 			"Collaborated with business stakeholders and cross-functional teams in Agile environment to deliver solutions.",
@@ -258,33 +301,37 @@ export const experiences = [
 		],
 	},
 	{
-		title: "Graduate Intern",
-		company: "PayPal",
-		date: "Aug 2024 - May 2025",
+		title: "Cybersecurity Researcher",
+		company: "Dakota State University",
+		date: "Jun 2024 - May 2025",
 		contents: [
-			"Migrated monolithic payment logic into distributed microservices with zero downtime.",
-			"Refactored REST APIs for backward-compatible integration with new services.",
-			"Performed functional and load testing to identify scaling bottlenecks.",
+			"Developed Python tools for threat modeling and protocol analysis to improve detection of IOCs.",
+			"Implemented post-quantum cryptographic algorithms with hybrid key exchange for enhanced data security.",
+			"Built network simulations with VMware and GNS3 to validate secure communication protocols.",
+			"Led Hybrid Quantum Cryptography research for Digital Agriculture, increasing security and efficiency by 22%.",
 		],
 	},
 	{
-		title: "Application Developer",
+		title: "Software Engineer",
 		company: "Accenture",
-		date: "Jul 2020 - Jun 2023",
+		date: "Apr 2021 - Jun 2023",
 		contents: [
-			"Developed backend services in Python and Java for cloud-native lending platform supporting high-volume mortgage processing workflows with 5,000+ daily loan applications.",
-			"Translated business requirements into technical specifications for lending lifecycle automation, working closely with product owners to implement digital workflows for mortgage processing.",
+			"Developed backend services in Java and Python for cloud-native lending platform supporting high-volume mortgage processing workflows with 5,000+ daily loan applications.",
 			"Optimized database queries on Oracle and SQL Server, reducing processing time by 40% for high-volume transactions.",
+			"Translated business requirements into technical specifications for lending lifecycle automation, working closely with product owners to implement digital workflows for mortgage processing.",
 			"Collaborated with cross-functional teams to integrate ML-based decision engine for credit underwriting workflows.",
 		],
 	},
 	{
-		title: "Developer Intern",
-		company: "Accenture",
-		date: "Nov 2019 - Apr 2020",
+		title: "Founding Member, Game Designer & Developer",
+		company: "Khadga Entertainment",
+		date: "Dec 2017 - Feb 2021",
 		contents: [
-			"Assisted in requirements gathering and analysis for financial platform modernization initiatives.",
-			"Supported Agile delivery teams with SQL query development, data validation, and user acceptance testing.",
+			"Designed multiple game titles, establishing core gameplay mechanics, level design, and player UX.",
+			"Released multiple titles on Google Play Store, managing full production lifecycle from development to launch.",
+			"Developed real-time multiplayer systems using Unity and C# enabling cross-device sync with low-latency networking.",
+			"Built 20+ custom Unity plugins to automate builds and optimize rendering and multiplayer performance.",
+			"Collaborated in Agile teams using Git, participated in daily Scrum, and mentored interns on coding standards.",
 		],
 	},
 ];
