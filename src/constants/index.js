@@ -9,10 +9,11 @@ import dkmImg from "/assets/projects/dkm_thumbnail.webp";
 import portfolioImg from "/assets/projects/portfolio_thumbnail.webp";
 import regalImg from "/assets/projects/regal_thumbnail.webp";
 import stationeryImg from "/assets/projects/stationery_thumbnail.webp";
+import tumbleImg from "/assets/projects/tumble_thumbnail.webp";
 import githubIcon from "/assets/socials/github.svg";
 
 // Social icons
-import linkedinIcon from "/assets/socials/linkedin.svg";
+import linkedinIcon from "/assets/socials/linkedIn.svg";
 import { logoUrls } from "../constants/logos";
 
 export const myProjects = [
@@ -224,7 +225,7 @@ export const myProjects = [
 		],
 		website: "https://akshaykappala.github.io",
 		github: "https://github.com/AkshayKappala/AkshayKappala.github.io",
-		image: portfolioImg,
+		image: tumbleImg,
 		tags: [
 			{
 				id: 1,
@@ -303,16 +304,16 @@ export const mySocials = [
 
 export const experiences = [
 	{
-		title: "Software Engineer (CW)",
+		title: "Full-Stack Software Engineer (Contract)",
 		company: "PayPal",
 		date: "May 2025 - Present",
 		contents: [
-			"Built high-throughput payment microservices in Spring Boot handling 2000+ RPM with 99.9% uptime.",
-			"Migrated monolithic payment logic into distributed microservices with zero downtime and backward compatibility.",
+			"Built responsive payment dashboards using React.js and Java Spring Boot handling 2000+ RPM with 99.9% uptime.",
+			"Developed full-stack payment workflows on Apache Tomcat, reducing processing time by 25%.",
 			"Integrated legacy systems with REST + Kafka; interfaced with TSYS mainframe green screens for business support.",
-			"Improved API performance by 30% through query optimization, PL/SQL procedures, and Redis caching.",
-			"Collaborated with business stakeholders and cross-functional teams in Agile environment to deliver solutions.",
-			"Maintained 90%+ test coverage for code quality and implemented Datadog/Splunk for system observability.",
+			"Improved API performance by 30% through code splitting, PL/SQL optimization on Oracle DB, and Redis caching.",
+			"Implemented secure web applications with JWT authentication following OWASP guidelines in Agile environment.",
+			"Maintained 90%+ test coverage with JUnit/Jest and system observability using Datadog/Splunk monitoring.",
 		],
 	},
 	{
@@ -320,21 +321,22 @@ export const experiences = [
 		company: "Dakota State University",
 		date: "Jun 2024 - May 2025",
 		contents: [
-			"Developed Python tools for threat modeling and protocol analysis to improve detection of IOCs.",
-			"Implemented post-quantum cryptographic algorithms with hybrid key exchange for enhanced data security.",
+			"Developed Python tools for threat modeling and protocol analysis to improve detection of IOCs. (GitHub)",
+			"Implemented post-quantum cryptographic algorithms with hybrid key exchange for enhanced data security. (GitHub)",
 			"Built network simulations with VMware and GNS3 to validate secure communication protocols.",
-			"Led Hybrid Quantum Cryptography research for Digital Agriculture, increasing security and efficiency by 22%.",
+			"Led Hybrid Quantum Cryptography research for Digital Agriculture, increasing security and efficiency by 22%. (Link)",
 		],
 	},
 	{
-		title: "Software Engineer",
+		title: "Full-Stack Engineer",
 		company: "Accenture",
 		date: "Apr 2021 - Jun 2023",
 		contents: [
-			"Developed backend services in Java and Python for cloud-native lending platform supporting high-volume mortgage processing workflows with 5,000+ daily loan applications.",
+			"Developed full-stack lending platform with React.js/Vite and Spring Boot supporting 5,000+ daily loan applications.",
+			"Created interactive dashboards for credit underwriting with dynamic forms and ML-based decision engine integration.",
+			"Implemented secure web applications on Linux with authentication and encryption for sensitive financial data.",
 			"Optimized database queries on Oracle and SQL Server, reducing processing time by 40% for high-volume transactions.",
-			"Translated business requirements into technical specifications for lending lifecycle automation, working closely with product owners to implement digital workflows for mortgage processing.",
-			"Collaborated with cross-functional teams to integrate ML-based decision engine for credit underwriting workflows.",
+			"Collaborated in Agile teams to translate business requirements into full-stack technical solutions.",
 		],
 	},
 	{
@@ -342,12 +344,11 @@ export const experiences = [
 		company: "Khadga Entertainment",
 		date: "Dec 2017 - Feb 2021",
 		contents: [
-			"Designed multiple game titles, establishing core gameplay mechanics, level design, and player UX.",
-			"Released multiple titles on Google Play Store, managing full production lifecycle from development to launch.",
+			"Designed multiple game titles, establishing core gameplay mechanics, level design, and player UX. (Link)",
+			"Released multiple titles on Google Play Store, managing full production lifecycle from development to launch. (Link)",
 			"Developed real-time multiplayer systems using Unity and C# enabling cross-device sync with low-latency networking.",
 			"Built 20+ custom Unity plugins to automate builds and optimize rendering and multiplayer performance.",
 			"Collaborated in Agile teams using Git, participated in daily Scrum, and mentored interns on coding standards.",
 		],
 	},
 ];
-

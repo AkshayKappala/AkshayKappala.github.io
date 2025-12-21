@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import closeIcon from "/assets/close.svg";
 import menuIcon from "/assets/menu.svg";
+import githubIcon from "/assets/socials/github.svg";
 
 function Navigation({ onNavigate }) {
 	return (
@@ -60,6 +61,17 @@ function Navigation({ onNavigate }) {
 					Contact
 				</button>
 			</li>
+			<li className="nav-li">
+				<a
+					href="https://github.com/AkshayKappala"
+					target="_blank"
+					rel="noreferrer"
+					className="nav-link inline-flex items-center gap-1.5"
+				>
+					<img src={githubIcon} alt="github" className="w-4 h-4" />
+					GitHub
+				</a>
+			</li>
 		</ul>
 	);
 }
@@ -86,7 +98,7 @@ const Navbar = () => {
 						className="text-xl font-bold transition-colors text-neutral-400 
 						hover:text-white"
 					>
-						Akshay
+						Akshay Kappala
 					</a>
 					<button
 						type="button"
