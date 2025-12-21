@@ -13,7 +13,7 @@ import tumbleImg from "/assets/projects/tumble_thumbnail.webp";
 import githubIcon from "/assets/socials/github.svg";
 
 // Social icons
-import linkedinIcon from "/assets/socials/linkedIn.svg";
+import linkedinIcon from "/assets/socials/linkedin.svg";
 import { logoUrls } from "../constants/logos";
 
 export const myProjects = [
