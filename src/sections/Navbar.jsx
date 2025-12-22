@@ -11,15 +11,6 @@ function Navigation({ onNavigate }) {
 				<button
 					type="button"
 					className="nav-link"
-					onClick={() => onNavigate("home")}
-				>
-					Home
-				</button>
-			</li>
-			<li className="nav-li">
-				<button
-					type="button"
-					className="nav-link"
 					onClick={() => onNavigate("about")}
 				>
 					About
@@ -111,13 +102,13 @@ const Navbar = () => {
 		<div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
 			<div className="mx-auto c-space max-w-7xl">
 				<div className="flex items-center justify-between py-2 sm:py-0">
-					<a
-						href="/"
-						className="text-xl font-bold transition-colors text-neutral-400 
-						hover:text-white"
+					<button
+						type="button"
+						onClick={() => handleNavigate("home")}
+						className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
 					>
 						Akshay Kappala
-					</a>
+					</button>
 					<button
 						type="button"
 						onClick={() => setIsOpen(!isOpen)}
