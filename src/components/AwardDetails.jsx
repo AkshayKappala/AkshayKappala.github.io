@@ -8,6 +8,7 @@ const AwardDetails = ({
 	subDescription,
 	image,
 	originalHref,
+	externalLinkLabel = "View Original",
 	closeModal,
 }) => {
 	return (
@@ -33,17 +34,6 @@ const AwardDetails = ({
 				{image ? (
 					<div className="relative">
 						<img src={image} alt={title} className="w-full rounded-t-2xl" />
-						{originalHref ? (
-							<a
-								href={originalHref}
-								target="_blank"
-								rel="noreferrer"
-								className="absolute bottom-4 right-4 inline-flex items-center gap-1 font-medium cursor-pointer hover-animation bg-midnight/80 border border-white/10 rounded-md px-3 py-2"
-							>
-								View Original
-								<img src={arrowUpIcon} className="size-4" alt="arrow up" />
-							</a>
-						) : null}
 					</div>
 				) : null}
 				<div className="p-5">
@@ -57,6 +47,19 @@ const AwardDetails = ({
 							{subDesc}
 						</p>
 					))}
+					{originalHref ? (
+						<div className="flex items-center justify-end mt-4">
+							<a
+								href={originalHref}
+								target="_blank"
+								rel="noreferrer"
+								className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
+							>
+								{externalLinkLabel}
+								<img src={arrowUpIcon} className="size-4" alt="arrow up" />
+							</a>
+						</div>
+					) : null}
 				</div>
 			</motion.div>
 		</motion.div>

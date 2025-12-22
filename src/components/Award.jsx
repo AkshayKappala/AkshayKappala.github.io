@@ -9,6 +9,8 @@ const Award = ({
 	subDescription,
 	image,
 	originalHref,
+	actionLabel = "Read More",
+	externalLinkLabel,
 	setPreview,
 }) => {
 	const [isOpen, setIsOpen] = React.useState(false);
@@ -33,7 +35,7 @@ const Award = ({
 					onClick={() => setIsOpen(true)}
 					className="flex items-center gap-1 cursor-pointer hover-animation shrink-0"
 				>
-					Read More
+					{actionLabel}
 					<img src={arrowRightIcon} className="w-5" alt="right arrow" />
 				</button>
 			</div>
@@ -46,6 +48,7 @@ const Award = ({
 						subDescription={subDescription}
 						image={image}
 						originalHref={originalHref}
+						externalLinkLabel={externalLinkLabel}
 						closeModal={() => setIsOpen(false)}
 					/>
 				)}

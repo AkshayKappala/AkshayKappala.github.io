@@ -56,6 +56,24 @@ function Navigation({ onNavigate }) {
 				<button
 					type="button"
 					className="nav-link"
+					onClick={() => onNavigate("publications")}
+				>
+					Publications
+				</button>
+			</li>
+			<li className="nav-li">
+				<button
+					type="button"
+					className="nav-link"
+					onClick={() => onNavigate("certifications")}
+				>
+					Certifications
+				</button>
+			</li>
+			<li className="nav-li">
+				<button
+					type="button"
+					className="nav-link"
 					onClick={() => onNavigate("contact")}
 				>
 					Contact

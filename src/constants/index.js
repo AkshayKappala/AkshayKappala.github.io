@@ -3,6 +3,9 @@ import ieeeImg from "/assets/awards/ieee.webp";
 import ieeeorgImg from "/assets/awards/ieeeorg.webp";
 import tech2018Img from "/assets/awards/tech2018.webp";
 import tech2018orgImg from "/assets/awards/tech2018org.webp";
+// Certificate images
+import comptiaCertImg from "/assets/certificates/comptia_cert.webp";
+import googleCertImg from "/assets/certificates/google_cert.webp";
 // Project images
 import creditxImg from "/assets/projects/creditx_thumbnail.webp";
 import dkmImg from "/assets/projects/dkm_thumbnail.webp";
@@ -286,6 +289,54 @@ export const awards = [
 		],
 		image: tech2018Img,
 		originalHref: tech2018orgImg,
+	},
+];
+
+export const publications = [
+	{
+		id: 1,
+		title:
+			"A Novel Approach to Quantum-Resistant Selective Encryption for Agricultural Sensors With Limited Resources",
+		description: "IEEE CCWC 2025",
+		subDescription: [
+			"This work presents DWT-based selective encryption for agricultural images on resource-constrained edge devices, accelerated via parallel CPU processing to avoid additional GPGPU hardware. It incorporates post-quantum security using NIST candidates ML-KEM-1024 (key encapsulation) and ML-DSA (signature verification), and reports strong visual degradation of encrypted data (mean PSNR 4.7201 dB, SSIM 0.0003) alongside 21.47%–52.43% performance improvement versus full AES-256 across file sizes.",
+		],
+		originalHref: "https://doi.org/10.1109/CCWC62904.2025.10903955",
+		externalLinkLabel: "View Publication",
+	},
+	{
+		id: 2,
+		title:
+			"A Dynamic Quantum-Resistant Selective Encryption Approach for Agricultural Sensors with Limited Resources",
+		description: "IEEE Access (Under Review)",
+		subDescription: [
+			"This paper proposes Dynamic Quantum-Resistant Selective Encryption (DQRSE) for agricultural sensors, combining 2D-DWT with NIST post-quantum primitives (ML-KEM-1024 for encapsulation and ML-DSA for signatures). The approach selectively encrypts the LL2 sub-band using AES-256-GCM and protects high-frequency sub-bands with HMAC-SHA256, with content-adaptive key rotation triggered when Frobenius-norm image differences exceed threshold τ. On CottonWeedID15 (5,187 images), it reports NPCR 99.6%, UACI 33.4%, and encrypted pixel correlation < 0.005; performance measurements on Debian VMs are presented as idealized lower bounds relative to ARM Cortex-M targets.",
+		],
+	},
+];
+
+export const certifications = [
+	{
+		id: 1,
+		title: "CompTIA Security+ (SY0-701)",
+		description: "CompTIA",
+		subDescription: [],
+		image: comptiaCertImg,
+		originalHref:
+			"https://cp.certmetrics.com/CompTIA/en/public/verify/credential/NBKWLX75TFVE1ZKE",
+		actionLabel: "View Certificate",
+		externalLinkLabel: "Verify Credentials",
+	},
+	{
+		id: 2,
+		title: "Google Cybersecurity Professional",
+		description: "Google",
+		subDescription: [],
+		image: googleCertImg,
+		originalHref:
+			"https://www.coursera.org/account/accomplishments/professional-cert/8H7POV9B7JTM",
+		actionLabel: "View Certificate",
+		externalLinkLabel: "Verify Credentials",
 	},
 ];
 
