@@ -12,17 +12,22 @@ const Project = ({
 	website,
 	image,
 	setPreview,
+	showPreview,
+	hidePreview,
 	tags = [],
 	hasSubDescription = false,
 }) => {
 	const [isHidden, setIsHidden] = React.useState(false);
 	return (
 		<>
-			{/** biome-ignore lint/a11y/noStaticElementInteractions: false positive */}
 			<div
 				className="flex flex-row py-10 justify-between items-end gap-4"
-				onMouseEnter={() => setPreview(image)}
-				onMouseLeave={() => setPreview(null)}
+				onPointerEnter={(e) =>
+					showPreview ? showPreview(image, e) : setPreview?.(image)
+				}
+				onPointerLeave={() =>
+					hidePreview ? hidePreview() : setPreview?.(null)
+				}
 			>
 				<div className="flex-1 min-w-0">
 					<div>

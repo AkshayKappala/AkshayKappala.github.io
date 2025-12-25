@@ -12,6 +12,7 @@ const Projects = () => {
 		x.set(e.clientX + 20);
 		y.set(e.clientY + 20);
 	};
+
 	const [preview, setPreview] = useState(null);
 	return (
 		// biome-ignore lint/a11y/noStaticElementInteractions: custom cursor preview handled via JavaScript events

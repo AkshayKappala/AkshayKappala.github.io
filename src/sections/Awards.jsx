@@ -12,6 +12,7 @@ const Awards = () => {
 		x.set(e.clientX + 20);
 		y.set(e.clientY + 20);
 	};
+
 	const [preview, setPreview] = useState(null);
 
 	return (
