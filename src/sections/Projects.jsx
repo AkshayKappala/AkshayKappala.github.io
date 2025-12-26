@@ -1,24 +1,16 @@
-import { motion, useMotionValue, useSpring } from "motion/react";
-import { useState } from "react";
+import CursorPreview from "../components/CursorPreview";
 import Project from "../components/Project";
 import { myProjects } from "../constants";
+import { useCursorPreview } from "../hooks/useCursorPreview";
 
 const Projects = () => {
-	const x = useMotionValue(0);
-	const y = useMotionValue(0);
-	const springX = useSpring(x, { damping: 10, stiffness: 50 });
-	const springY = useSpring(y, { damping: 10, stiffness: 50 });
-	const handleMouseMove = (e) => {
-		x.set(e.clientX + 20);
-		y.set(e.clientY + 20);
-	};
+	const { x, y, preview, handlePointerMove, handleHover, handleLeave } =
+		useCursorPreview();
 
-	const [preview, setPreview] = useState(null);
 	return (
-		// biome-ignore lint/a11y/noStaticElementInteractions: custom cursor preview handled via JavaScript events
 		<section
 			id="projects"
-			onMouseMove={handleMouseMove}
+			onPointerMove={handlePointerMove}
 			className="relative c-space section-spacing"
 		>
 			<h2 className="text-heading">My Personal Projects</h2>
@@ -27,19 +19,14 @@ const Projects = () => {
 				<Project
 					key={project.id}
 					{...project}
-					setPreview={setPreview}
+					showPreview={handleHover}
+					hidePreview={handleLeave}
 					hasSubDescription={
 						project.subDescription && project.subDescription.length > 0
 					}
 				/>
 			))}
-			{preview && (
-				<motion.img
-					className="fixed top-0 left-0 z-50 object-cover aspect-video rounded-lg shadow-lg pointer-events-none w-80"
-					src={preview}
-					style={{ x: springX, y: springY }}
-				/>
-			)}
+			{preview && <CursorPreview x={x} y={y} preview={preview} />}
 		</section>
 	);
 };

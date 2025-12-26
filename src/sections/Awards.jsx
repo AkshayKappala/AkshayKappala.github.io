@@ -1,39 +1,29 @@
-import { motion, useMotionValue, useSpring } from "motion/react";
-import { useState } from "react";
 import Award from "../components/Award";
+import CursorPreview from "../components/CursorPreview";
 import { awards } from "../constants";
+import { useCursorPreview } from "../hooks/useCursorPreview";
 
 const Awards = () => {
-	const x = useMotionValue(0);
-	const y = useMotionValue(0);
-	const springX = useSpring(x, { damping: 10, stiffness: 50 });
-	const springY = useSpring(y, { damping: 10, stiffness: 50 });
-	const handleMouseMove = (e) => {
-		x.set(e.clientX + 20);
-		y.set(e.clientY + 20);
-	};
-
-	const [preview, setPreview] = useState(null);
+	const { x, y, preview, handlePointerMove, handleHover, handleLeave } =
+		useCursorPreview();
 
 	return (
-		// biome-ignore lint/a11y/noStaticElementInteractions: custom cursor preview handled via JavaScript events
 		<section
 			id="awards"
-			onMouseMove={handleMouseMove}
+			onPointerMove={handlePointerMove}
 			className="relative c-space section-spacing"
 		>
 			<h2 className="text-heading">Awards</h2>
 			<div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-12 h-px w-full" />
 			{awards.map((award) => (
-				<Award key={award.id} {...award} setPreview={setPreview} />
-			))}
-			{preview && (
-				<motion.img
-					className="fixed top-0 left-0 z-50 object-cover aspect-video rounded-lg shadow-lg pointer-events-none w-80"
-					src={preview}
-					style={{ x: springX, y: springY }}
+				<Award
+					key={award.id}
+					{...award}
+					showPreview={handleHover}
+					hidePreview={handleLeave}
 				/>
-			)}
+			))}
+			{preview && <CursorPreview x={x} y={y} preview={preview} />}
 		</section>
 	);
 };
