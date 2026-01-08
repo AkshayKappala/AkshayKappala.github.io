@@ -349,19 +349,19 @@ export const mySocials = [
 ];
 
 export const experiences = [
-	{
-		title: "Full-Stack Software Engineer (Contract)",
-		company: "PayPal",
-		date: "May 2025 - Present",
-		contents: [
-			"Built responsive payment dashboards using React.js and Java Spring Boot handling 2000+ RPM with 99.9% uptime.",
-			"Developed full-stack payment workflows on Apache Tomcat, reducing processing time by 25%.",
-			"Integrated legacy systems with REST + Kafka; interfaced with TSYS mainframe green screens for business support.",
-			"Improved API performance by 30% through code splitting, PL/SQL optimization on Oracle DB, and Redis caching.",
-			"Implemented secure web applications with JWT authentication following OWASP guidelines in Agile environment.",
-			"Maintained 90%+ test coverage with JUnit/Jest and system observability using Datadog/Splunk monitoring.",
-		],
-	},
+	// {
+	// 	title: "Full-Stack Software Engineer (Contract)",
+	// 	company: "PayPal",
+	// 	date: "May 2025 - Present",
+	// 	contents: [
+	// 		"Built responsive payment dashboards using React.js and Java Spring Boot handling 2000+ RPM with 99.9% uptime.",
+	// 		"Developed full-stack payment workflows on Apache Tomcat, reducing processing time by 25%.",
+	// 		"Integrated legacy systems with REST + Kafka; interfaced with TSYS mainframe green screens for business support.",
+	// 		"Improved API performance by 30% through code splitting, PL/SQL optimization on Oracle DB, and Redis caching.",
+	// 		"Implemented secure web applications with JWT authentication following OWASP guidelines in Agile environment.",
+	// 		"Maintained 90%+ test coverage with JUnit/Jest and system observability using Datadog/Splunk monitoring.",
+	// 	],
+	// },
 	{
 		title: "Research Engineer",
 		company: "Dakota State University",
@@ -373,18 +373,18 @@ export const experiences = [
 			"Led Hybrid Quantum Cryptography research for Digital Agriculture, increasing security and efficiency by 22%. (Link)",
 		],
 	},
-	{
-		title: "Full-Stack Engineer",
-		company: "Accenture",
-		date: "Apr 2021 - Jun 2023",
-		contents: [
-			"Developed full-stack lending platform with React.js/Vite and Spring Boot supporting 5,000+ daily loan applications.",
-			"Created interactive dashboards for credit underwriting with dynamic forms and ML-based decision engine integration.",
-			"Implemented secure web applications on Linux with authentication and encryption for sensitive financial data.",
-			"Optimized database queries on Oracle and SQL Server, reducing processing time by 40% for high-volume transactions.",
-			"Collaborated in Agile teams to translate business requirements into full-stack technical solutions.",
-		],
-	},
+	// {
+	// 	title: "Full-Stack Engineer",
+	// 	company: "Accenture",
+	// 	date: "Apr 2021 - Jun 2023",
+	// 	contents: [
+	// 		"Developed full-stack lending platform with React.js/Vite and Spring Boot supporting 5,000+ daily loan applications.",
+	// 		"Created interactive dashboards for credit underwriting with dynamic forms and ML-based decision engine integration.",
+	// 		"Implemented secure web applications on Linux with authentication and encryption for sensitive financial data.",
+	// 		"Optimized database queries on Oracle and SQL Server, reducing processing time by 40% for high-volume transactions.",
+	// 		"Collaborated in Agile teams to translate business requirements into full-stack technical solutions.",
+	// 	],
+	// },
 	{
 		title: "Founding Member, Game Designer & Developer",
 		company: "Khadga Entertainment",
