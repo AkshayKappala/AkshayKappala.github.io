@@ -349,49 +349,36 @@ export const mySocials = [
 ];
 
 export const experiences = [
-	// {
-	// 	title: "Full-Stack Software Engineer (Contract)",
-	// 	company: "PayPal",
-	// 	date: "May 2025 - Present",
-	// 	contents: [
-	// 		"Built responsive payment dashboards using React.js and Java Spring Boot handling 2000+ RPM with 99.9% uptime.",
-	// 		"Developed full-stack payment workflows on Apache Tomcat, reducing processing time by 25%.",
-	// 		"Integrated legacy systems with REST + Kafka; interfaced with TSYS mainframe green screens for business support.",
-	// 		"Improved API performance by 30% through code splitting, PL/SQL optimization on Oracle DB, and Redis caching.",
-	// 		"Implemented secure web applications with JWT authentication following OWASP guidelines in Agile environment.",
-	// 		"Maintained 90%+ test coverage with JUnit/Jest and system observability using Datadog/Splunk monitoring.",
-	// 	],
-	// },
 	{
 		title: "Research Engineer",
 		company: "Dakota State University",
 		date: "Jun 2024 - May 2025",
 		contents: [
-			"Developed Python tools for threat modeling and protocol analysis to improve detection of IOCs. (GitHub)",
-			"Implemented post-quantum cryptographic algorithms with hybrid key exchange for enhanced data security. (GitHub)",
+			"Developed Python tools for threat modeling and protocol analysis to improve detection of IOCs. ",
+			"Implemented post-quantum cryptographic algorithms with hybrid key exchange for enhanced data security. ",
 			"Built network simulations with VMware and GNS3 to validate secure communication protocols.",
-			"Led Hybrid Quantum Cryptography research for Digital Agriculture, increasing security and efficiency by 22%. (Link)",
+			"Led Hybrid Quantum Cryptography research for Digital Agriculture, increasing security and efficiency by 22%. ",
 		],
 	},
-	// {
-	// 	title: "Full-Stack Engineer",
-	// 	company: "Accenture",
-	// 	date: "Apr 2021 - Jun 2023",
-	// 	contents: [
-	// 		"Developed full-stack lending platform with React.js/Vite and Spring Boot supporting 5,000+ daily loan applications.",
-	// 		"Created interactive dashboards for credit underwriting with dynamic forms and ML-based decision engine integration.",
-	// 		"Implemented secure web applications on Linux with authentication and encryption for sensitive financial data.",
-	// 		"Optimized database queries on Oracle and SQL Server, reducing processing time by 40% for high-volume transactions.",
-	// 		"Collaborated in Agile teams to translate business requirements into full-stack technical solutions.",
-	// 	],
-	// },
+	{
+		title: "Full-Stack Engineer",
+		company: "Accenture",
+		date: "Apr 2021 - Jun 2023",
+		contents: [
+			"Architected Spring Boot microservices processing 5,000+ daily loan applications with 99.9% uptime and 25% faster response times.",
+			"Built RESTful APIs and Kafka event streams for credit underwriting workflows integrating ML-based scoring engines and automated decisioning logic.",
+			"Optimized Oracle PL/SQL stored procedures and implemented Redis caching layer, improving API throughput by 30% under peak load.",
+			"Developed React.js dashboards with dynamic forms consuming backend APIs for loan origination and portfolio management.",
+			"Maintained 90%+ test coverage with JUnit for backend services and Jest for frontend components.",
+		],
+	},
 	{
 		title: "Founding Member, Game Designer & Developer",
 		company: "Khadga Entertainment",
 		date: "Dec 2017 - Feb 2021",
 		contents: [
-			"Designed multiple game titles, establishing core gameplay mechanics, level design, and player UX. (Link)",
-			"Released multiple titles on Google Play Store, managing full production lifecycle from development to launch. (Link)",
+			"Designed multiple game titles, establishing core gameplay mechanics, level design, and player UX. ",
+			"Released multiple titles on Google Play Store, managing full production lifecycle from development to launch. ",
 			"Developed real-time multiplayer systems using Unity and C# enabling cross-device sync with low-latency networking.",
 			"Built 20+ custom Unity plugins to automate builds and optimize rendering and multiplayer performance.",
 			"Collaborated in Agile teams using Git, participated in daily Scrum, and mentored interns on coding standards.",
