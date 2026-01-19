@@ -13,32 +13,11 @@ export default defineConfig({
 	build: {
 		rollupOptions: {
 			output: {
-				manualChunks: (id) => {
-					if (id.includes("node_modules")) {
-						if (id.includes("react") || id.includes("react-dom")) {
-							return "vendor";
-						}
-						if (
-							id.includes("three") ||
-							id.includes("@react-three") ||
-							id.includes("maath")
-						) {
-							return "three";
-						}
-						if (id.includes("motion") || id.includes("framer-motion")) {
-							return "motion";
-						}
-						if (id.includes("cobe")) {
-							return "cobe";
-						}
-						if (id.includes("@emailjs")) {
-							return "emailjs";
-						}
-						return "vendor-other";
-					}
+				manualChunks: {
+					three: ["three", "@react-three/fiber", "@react-three/drei", "maath"],
 				},
 			},
 		},
-		chunkSizeWarningLimit: 1000,
+		chunkSizeWarningLimit: 1500,
 	},
 });
