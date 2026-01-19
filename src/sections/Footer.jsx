@@ -16,7 +16,7 @@ const Footer = () => {
 					</a>
 				))}
 			</div>
-			<p>© 2025 Akshay. All rights reserved.</p>
+			<p>© 2026 Akshay. All rights reserved.</p>
 		</section>
 	);
 };
