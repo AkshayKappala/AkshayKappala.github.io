@@ -365,11 +365,12 @@ export const experiences = [
 		company: "Accenture",
 		date: "Apr 2021 - Jun 2023",
 		contents: [
-			"Architected Spring Boot microservices processing 5,000+ daily loan applications with 99.9% uptime and 25% faster response times.",
-			"Built RESTful APIs and Kafka event streams for credit underwriting workflows integrating ML-based scoring engines and automated decisioning logic.",
-			"Optimized Oracle PL/SQL stored procedures and implemented Redis caching layer, improving API throughput by 30% under peak load.",
-			"Developed React.js dashboards with dynamic forms consuming backend APIs for loan origination and portfolio management.",
-			"Maintained 90%+ test coverage with JUnit for backend services and Jest for frontend components.",
+			"Architected Java Spring Boot microservices processing 5,000+ daily transactions with 99.9% uptime on AWS cloud infrastructure. ",
+			"Developed RESTful APIs and event-driven workflows using Kafka for payment authorization and fraud detection.",
+			"Built comprehensive test suites achieving 90%+ coverage using JUnit, Mockito, and Jest for automated testing.",
+			"Designed TypeScript React.js dashboards with Redux for real-time transaction monitoring and credit line management.",
+			"Optimized database queries and Redis caching improving API response times by 30% under peak load conditions.",
+			"Deployed microservices using Docker containers with automated CI/CD pipelines on AWS cloud infrastructure.",
 		],
 	},
 	{

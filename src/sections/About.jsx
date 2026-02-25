@@ -90,7 +90,7 @@ const About = () => {
 						<p className="headtext">Time Zone</p>
 						<p className="subtext font-bold">US Central Time</p>
 						<p className="subtext">
-							I'm based in Texas, and open to work anywhere across the United
+							I'm based in Sioux Falls, and open to work anywhere across the United
 							States.
 						</p>
 					</div>

@@ -28,11 +28,12 @@ const GLOBE_CONFIG = {
 		{ location: [47.6062, -122.3321], size: 0.05 }, // Seattle
 		{ location: [40.7128, -74.006], size: 0.05 }, // New York City
 		{ location: [30.2672, -97.7431], size: 0.05 }, // Austin
-		{ location: [32.7767, -96.797], size: 0.15 }, // Dallas
+		{ location: [32.7767, -96.797], size: 0.05 }, // Dallas
 		{ location: [42.3601, -71.0589], size: 0.05 }, // Boston
 		{ location: [34.0522, -118.2437], size: 0.05 }, // Los Angeles
 		{ location: [25.7617, -80.1918], size: 0.05 }, // Miami
 		{ location: [33.749, -84.388], size: 0.05 }, // Atlanta
+		{ location: [43.5447, -96.7311], size: 0.15 }, // Sioux Falls
 	],
 };
 
