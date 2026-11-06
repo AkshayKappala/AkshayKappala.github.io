@@ -303,10 +303,12 @@ export const publications = [
 		id: 2,
 		title:
 			"A Dynamic Quantum-Resistant Selective Encryption Approach for Agricultural Sensors with Limited Resources",
-		description: "IEEE Access (Under Review)",
+		description: "IEEE Access 2026",
 		subDescription: [
 			"This paper proposes Dynamic Quantum-Resistant Selective Encryption (DQRSE) for agricultural sensors, combining 2D-DWT with NIST post-quantum primitives (ML-KEM-1024 for encapsulation and ML-DSA for signatures). The approach selectively encrypts the LL2 sub-band using AES-256-GCM and protects high-frequency sub-bands with HMAC-SHA256, with content-adaptive key rotation triggered when Frobenius-norm image differences exceed threshold τ. On CottonWeedID15 (5,187 images), it reports NPCR 99.6%, UACI 33.4%, and encrypted pixel correlation < 0.005; performance measurements on Debian VMs are presented as idealized lower bounds relative to ARM Cortex-M targets.",
 		],
+		originalHref: "https://doi.org/10.1109/ACCESS.2026.3668608",
+		externalLinkLabel: "View Publication",
 	},
 ];
 
@@ -349,6 +351,20 @@ export const mySocials = [
 ];
 
 export const experiences = [
+	{
+		title: "Software Engineer",
+		company: "Sanford Health",
+		location: "Sioux Falls, SD",
+		date: "Apr 2026 - Present",
+		contents: [
+			"Eliminate vendor dependencies and operational risk by modernizing legacy services into IaC-managed cloud workloads.",
+			"Architect highly observable serverless workflows across 100+ functions, creating alerts to streamline support.",
+			"Utilize agentic AI workflows with strict enterprise guardrails to safely accelerate backend development and prototyping.",
+			"Develop responsive web interfaces, translating direct user feedback into intuitive, high-efficiency laboratory workflows.",
+			"Scale relational and NoSQL data tiers to ensure high throughput and operational stability under heavy load.",
+			"Automate discovery tooling across 5,000+ cloud assets, establishing baseline inventory for region migration.",
+		],
+	},
 	{
 		title: "Research Engineer",
 		company: "Dakota State University",

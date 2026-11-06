@@ -51,6 +51,9 @@ export const Timeline = ({ data }) => {
 								<h3 className="text-3xl text-neutral-500">{item.date}</h3>
 								<h3 className="text-neutral-300">{item.title}</h3>
 								<h3 className="text-2xl text-neutral-400">{item.company}</h3>
+								{item.location && (
+									<h3 className="text-lg text-neutral-500">{item.location}</h3>
+								)}
 							</div>
 						</div>
 
@@ -62,6 +65,9 @@ export const Timeline = ({ data }) => {
 								<h3>{item.date}</h3>
 								<h3>{item.title}</h3>
 								<h3 className="text-xl text-neutral-400">{item.company}</h3>
+								{item.location && (
+									<h3 className="text-lg text-neutral-500">{item.location}</h3>
+								)}
 							</div>
 							<ul className="list-disc pl-5 space-y-5 text-xl font-normal text-neutral-400">
 								{item.contents.map((content) => (
